@@ -1,0 +1,22 @@
+{
+    "contratos": [
+        {
+            "url":"https://experience.arcgis.com/experience/5af791b7abb34112bb9d0909545ea5a6/",
+            "menu_title":"Metro de la 80",
+            "redirect": "metro-de-la-80",
+            "project_id": "1"
+        },
+        {
+            "url":"https://experience.arcgis.com/experience/840fa2b2400443f9bf42a579a0c6a482/",
+            "menu_title":"Movilidad",
+            "redirect": "movilidad",
+            "project_id": "2"
+        },
+        {
+            "url":"https://experience.arcgis.com/experience/840fa2b2400443f9bf42a579a0c6a482/",
+            "menu_title":"Movilidad",
+            "redirect": "movilidad",
+            "project_id": "3"
+        }
+    ]
+}
