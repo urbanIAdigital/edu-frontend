@@ -2,11 +2,11 @@
 import { Box, Container } from "@mui/material";
 import { FC } from "react";
 import img from "../assets/EcosistemaDigital_20240826.png";
-import {
-  ArcgisLegend,
-  ArcgisMap,
-  ArcgisSearch,
-} from "@arcgis/map-components-react";
+// import {
+//   ArcgisLegend,
+//   ArcgisMap,
+//   ArcgisSearch,
+// } from "@arcgis/map-components-react";
 import { defineCustomElements as defineMapElements } from "@arcgis/map-components/dist/loader";
 
 defineMapElements(window, {
