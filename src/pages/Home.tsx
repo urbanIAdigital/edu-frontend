@@ -7,11 +7,11 @@ import img from "../assets/EcosistemaDigital_20240826.png";
 //   ArcgisMap,
 //   ArcgisSearch,
 // } from "@arcgis/map-components-react";
-import { defineCustomElements as defineMapElements } from "@arcgis/map-components/dist/loader";
+// import { defineCustomElements as defineMapElements } from "@arcgis/map-components/dist/loader";
 
-defineMapElements(window, {
-  resourcesUrl: "https://js.arcgis.com/map-components/4.30/assets",
-});
+// defineMapElements(window, {
+//   resourcesUrl: "https://js.arcgis.com/map-components/4.30/assets",
+// });
 
 const Home: FC = () => {
   // return (
