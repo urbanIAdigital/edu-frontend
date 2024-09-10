@@ -11,12 +11,6 @@
             "menu_title":"Movilidad",
             "redirect": "movilidad",
             "project_id": "2"
-        },
-        {
-            "url":"https://experience.arcgis.com/experience/840fa2b2400443f9bf42a579a0c6a482/",
-            "menu_title":"Movilidad",
-            "redirect": "movilidad",
-            "project_id": "3"
         }
     ]
 }

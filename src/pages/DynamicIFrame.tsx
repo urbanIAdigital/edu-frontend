@@ -10,6 +10,7 @@ const DynamicIFrame = () => {
       src={contrato?.url}
       height="100%"
       width="100%"
+      sandbox="allow-scripts allow-same-origin"
     ></iframe>
   );
 };
