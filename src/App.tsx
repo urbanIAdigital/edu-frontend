@@ -1,6 +1,6 @@
 // src/App.tsx
 import { FC, ReactNode } from "react";
-import { HashRouter, Navigate, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 import { AuthProvider } from "./context/AuthContext";
 import { useAuth } from "./hooks/useAuth";
 import Layout from "./components/Layout";
@@ -16,7 +16,7 @@ const ProtectedRoute: FC<{ children: ReactNode }> = ({ children }) => {
 const App: FC = () => {
   return (
     <AuthProvider>
-      <HashRouter>
+      <BrowserRouter basename="/edu-frontend">
         <Routes>
           <Route path="/" element={<Layout />}>
             <Route index element={<Home />} />
@@ -31,7 +31,7 @@ const App: FC = () => {
             <Route path="/*" element={<NotFoundPage />} />
           </Route>
         </Routes>
-      </HashRouter>
+      </BrowserRouter>
     </AuthProvider>
   );
 };

@@ -14,8 +14,7 @@ const DynamicIFrame = () => {
         <iframe
           src={contrato?.url}
           height="100%"
-          width="100%"
-          sandbox="allow-scripts allow-same-origin"
+          width="100%" 
         ></iframe>
       ) : (
         <Box
