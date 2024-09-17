@@ -1,7 +1,5 @@
 // src/pages/Home.tsx
-import { Box, Container } from "@mui/material";
 import { FC } from "react";
-import img from "../assets/EcosistemaDigital_20240826.png";
 // import {
 //   ArcgisLegend,
 //   ArcgisMap,
@@ -29,17 +27,24 @@ const Home: FC = () => {
   //   </Box>
   // );
   return (
-    <Container maxWidth="md">
-      <Box height={500} width={"100%"} mt={3}>
-        <img
-          src={img}
-          style={{ objectFit: "contain" }}
-          alt=""
-          width={"100%"}
-          height={650}
-        />
-      </Box>
-    </Container>
+    // <Container maxWidth="md">
+    //   <Box height={500} width={"100%"} mt={3}>
+    //     <img
+    //       src={img}
+    //       style={{ objectFit: "contain" }}
+    //       alt=""
+    //       width={"100%"}
+    //       height={650}
+    //     />
+    //   </Box>
+    // </Container>
+    <iframe
+      src={
+        "https://experience.arcgis.com/experience/7a4ac5931ec04940a1f2ae92c5918a89/"
+      }
+      height="100%"
+      width="100%"
+    ></iframe>
   );
 };
 

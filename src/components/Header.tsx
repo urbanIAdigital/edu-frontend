@@ -52,6 +52,7 @@ const Header: FC<HeaderProps> = ({ toggleSidebar }) => {
           color="inherit"
           aria-label="menu"
           onClick={toggleSidebar}
+          sx={{display: "none"}}
         >
           <MenuIcon />
         </IconButton>

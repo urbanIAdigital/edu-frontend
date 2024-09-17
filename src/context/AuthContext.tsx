@@ -1,13 +1,21 @@
 // src/context/AuthContext.tsx
-import React, { useState } from 'react';
-import { AuthContext } from '../hooks/useAuth';
+import { FC, useState } from "react";
+import { AuthContext } from "../hooks/useAuth";
+import { useNavigate } from "react-router-dom";
 
-export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
+export const AuthProvider: FC<{ children: React.ReactNode }> = ({
+  children,
+}) => {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
+  const navigate = useNavigate();
 
   const login = (username: string, password: string) => {
-    if (username === 'admin' && password === 'admin') {
+    console.log(username, password);
+
+    if (username === "admin" && password === "admin") {
       setIsAuthenticated(true);
+      localStorage.setItem("isAuthenticated", "true");
+      navigate("/");
       return true;
     }
     return false;
