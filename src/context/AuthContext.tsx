@@ -18,6 +18,12 @@ export const AuthProvider: FC<{ children: React.ReactNode }> = ({
       navigate("/");
       return true;
     }
+    if (username === "metro-80" && password === "metro-80") {
+      setIsAuthenticated(true);
+      localStorage.setItem("isAuthenticated", "true");
+      navigate("/");
+      return true;
+    }
     return false;
   };
 
