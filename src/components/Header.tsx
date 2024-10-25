@@ -40,8 +40,11 @@ const Header: FC<HeaderProps> = ({ toggleSidebar }) => {
   return (
     <AppBar
       position="fixed"
-      sx={{ zIndex: (theme) => theme.zIndex.drawer + 1,bgcolor:"#E86924" }}
-      
+      sx={{
+        zIndex: (theme) => theme.zIndex.drawer + 1,
+        bgcolor: "#E86924",
+        "& .MuiToolbar-root": { minHeight: "54px !important" },
+      }}
     >
       <Toolbar>
         <Box width={200}>
@@ -52,7 +55,7 @@ const Header: FC<HeaderProps> = ({ toggleSidebar }) => {
           color="inherit"
           aria-label="menu"
           onClick={toggleSidebar}
-          sx={{display: "none"}}
+          sx={{ display: "none" }}
         >
           <MenuIcon />
         </IconButton>
