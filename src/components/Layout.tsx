@@ -21,7 +21,7 @@ const Layout: React.FC = () => {
             flexGrow: 1,
             marginLeft: sidebarOpen ? '0px' : '-240px',
             transition: 'margin-left 0.3s ease',
-            marginTop: '74px',
+            marginTop: '54px',
           }}
         >
           <Outlet />

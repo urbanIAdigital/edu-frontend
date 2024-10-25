@@ -45,7 +45,7 @@ const Header: FC<HeaderProps> = ({ toggleSidebar }) => {
     >
       <Toolbar>
         <Box width={200}>
-          <img src={eduLogo} alt="" height={70} />
+          <img src={eduLogo} alt="" height={50} />
         </Box>
         <IconButton
           edge="start"
